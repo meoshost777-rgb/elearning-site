@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>E-learning — Static Copy</title>
+  <style>
+    body{margin:0;font-family:Arial, sans-serif;background:#f8fafc;color:#0f172a}
+    *{box-sizing:border-box}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+
+    /* Header */
+    header{background:#fff;box-shadow:0 4px 10px rgba(0,0,0,.05);position:sticky;top:0;z-index:50}
+    header .container{display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;font-size:22px;color:#2563eb}
+    nav{display:flex;gap:20px}
+    nav a{padding:10px 14px;border-radius:6px;font-size:15px}
+    nav a:hover{background:#f1f5f9}
+
+    /* Buttons */
+    .btn{padding:12px 26px;font-weight:600;border:none;cursor:pointer;font-size:15px;border-radius:30px}
+    .btn-outline{border:2px solid #2563eb;background:#fff;color:#2563eb}
+    .btn-primary{background:#2563eb;color:#fff}
+
+    /* Hero */
+    .hero{display:flex;gap:30px;align-items:center;padding:60px 0;flex-wrap:wrap}
+    .hero h1{font-size:40px;margin:0 0 16px}
+    .hero p{color:#475569;margin:0 0 24px;font-size:16px}
+    .hero-left{flex:1;min-width:280px}
+    .hero-right{flex:1;min-width:280px}
+    .search-box{display:flex;max-width:500px;background:#fff;border-radius:35px;box-shadow:0 2px 8px rgba(0,0,0,.06);overflow:hidden}
+    .search-box input{flex:1;border:none;padding:14px 18px;font-size:16px;outline:none}
+    .search-box button{background:#2563eb;color:#fff;border:none;padding:0 26px;cursor:pointer;font-size:15px;border-radius:0 35px 35px 0}
+
+    /* Stats */
+    .stats{display:flex;gap:30px;justify-content:center;margin:40px 0;flex-wrap:wrap}
+    .stat{background:#fff;padding:20px 30px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.05);text-align:center;flex:1;min-width:200px}
+    .stat h3{margin:0;font-size:28px;color:#2563eb}
+    .stat p{margin:6px 0 0;color:#475569}
+
+    /* Companies */
+    .companies{padding:30px 0;text-align:center}
+    .companies h3{margin-bottom:20px;color:#64748b;font-size:15px}
+    .companies-logos{display:flex;justify-content:center;gap:30px;flex-wrap:wrap}
+    .companies-logos img{height:30px;opacity:.85;transition:.3s}
+    .companies-logos img:hover{opacity:1}
+
+    /* Sections */
+    h2.section-title{margin:40px 0 20px;font-size:24px}
+
+    /* Courses */
+    .courses{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+    .course{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+    .course img{width:100%;height:150px;object-fit:cover}
+    .course .body{padding:14px}
+    .course .title{font-weight:700;margin:6px 0}
+    .course .meta{font-size:13px;color:#64748b;display:flex;justify-content:space-between}
+
+    /* Mentors */
+    .mentors{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px}
+    .mentor{background:#fff;padding:16px;border-radius:10px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+    .mentor img{width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:10px}
+
+    /* Testimonials */
+    .testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px}
+    .testimonial{background:#fff;padding:16px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+    .testimonial img{width:50px;height:50px;border-radius:50%;object-fit:cover;float:left;margin-right:10px}
+    .testimonial strong{display:block;margin-top:8px}
+
+    /* Footer */
+    footer{padding:20px 0;text-align:center;color:#64748b;font-size:14px;margin-top:40px}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">eLearning</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">Mentors</a>
+      <a href="#">Community</a>
+    </nav>
+    <div>
+      <button class="btn btn-outline">Sign In</button>
+      <button class="btn btn-primary">Sign Up</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Advance your engineering skills with us.</h1>
+      <p>Build skills with our courses and mentors from world-class companies.</p>
+      <!-- Search box -->
+      <div class="search-box">
+        <input type="text" placeholder="Search courses...">
+        <button>Search</button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=500&fit=crop" 
+           alt="Learning" style="border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.1)">
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stat">
+      <h3>25k+</h3>
+      <p>Students Enrolled</p>
+    </div>
+    <div class="stat">
+      <h3>120+</h3>
+      <p>Courses Available</p>
+    </div>
+    <div class="stat">
+      <h3>15k+</h3>
+      <p>Certificates Granted</p>
+    </div>
+  </section>
+
+  <!-- Companies -->
+  <section class="companies">
+    <h3>Trusted by companies of all sizes</h3>
+    <div class="companies-logos">
+      <img src="https://themewagon.github.io/E-learning/images/companies/microsoft.svg" alt="Microsoft">
+      <img src="https://themewagon.github.io/E-learning/images/companies/google.svg" alt="Google">
+      <img src="https://themewagon.github.io/E-learning/images/companies/walmart.svg" alt="Walmart">
+      <img src="https://themewagon.github.io/E-learning/images/companies/airbnb.svg" alt="Airbnb">
+      <img src="https://themewagon.github.io/E-learning/images/companies/fedex.svg" alt="FedEx">
+      <img src="https://themewagon.github.io/E-learning/images/companies/hubspot.svg" alt="Hubspot">
+    </div>
+  </section>
+
+  <!-- Courses -->
+  <h2 class="section-title">Popular Courses</h2>
+  <div class="courses">
+    <div class="course">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=200&fit=crop" alt="">
+      <div class="body">
+        <div class="title">Full Stack Web Development</div>
+        <div class="meta"><span>12 classes</span><span>$20</span></div>
+      </div>
+    </div>
+    <div class="course">
+      <img src="https://images.unsplash.com/photo-1581093588401-22c2fda4b6a4?w=400&h=200&fit=crop" alt="">
+      <div class="body">
+        <div class="title">Data Science with Python</div>
+        <div class="meta"><span>10 classes</span><span>$25</span></div>
+      </div>
+    </div>
+    <div class="course">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=200&fit=crop" alt="">
+      <div class="body">
+        <div class="title">UI/UX Design Basics</div>
+        <div class="meta"><span>8 classes</span><span>$15</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mentors -->
+  <h2 class="section-title">Meet Our Mentors</h2>
+  <div class="mentors">
+    <div class="mentor">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=200&h=200&fit=crop" alt="">
+      <div><strong>John Smith</strong></div>
+      <div style="color:#64748b;font-size:14px">UX Designer</div>
+    </div>
+    <div class="mentor">
+      <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=200&h=200&fit=crop" alt="">
+      <div><strong>Emily Johnson</strong></div>
+      <div style="color:#64748b;font-size:14px">Software Engineer</div>
+    </div>
+    <div class="mentor">
+      <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200&h=200&fit=crop" alt="">
+      <div><strong>Michael Brown</strong></div>
+      <div style="color:#64748b;font-size:14px">Data Scientist</div>
+    </div>
+    <div class="mentor">
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop" alt="">
+      <div><strong>Sarah Williams</strong></div>
+      <div style="color:#64748b;font-size:14px">Project Manager</div>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <h2 class="section-title">What Our Students Say</h2>
+  <div class="testimonials">
+    <div class="testimonial">
+      <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=100&h=100&fit=crop" alt="">
+      <p>"The courses were really helpful and easy to follow. Highly recommend!"</p>
+      <strong>David Miller</strong>
+      <span style="color:#64748b;font-size:13px">Software Developer</span>
+    </div>
+    <div class="testimonial">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="">
+      <p>"I learned so much in such a short time. The mentors are fantastic."</p>
+      <strong>Olivia Davis</strong>
+      <span style="color:#64748b;font-size:13px">UI/UX Designer</span>
+    </div>
+    <div class="testimonial">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=100&h=100&fit=crop" alt="">
+      <p>"Amazing platform! The community support makes a huge difference."</p>
+      <strong>Daniel Wilson</strong>
+      <span style="color:#64748b;font-size:13px">Data Analyst</span>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © <span id="year"></span> eLearning. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
